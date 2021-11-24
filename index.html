@@ -187,7 +187,7 @@
               Geneva</a>, I'm now as a freelance data scientist.</p>
           <a class="btn btn-secondary btn-l text-uppercase"
             href="https://www.unige.ch/fapse/e3lab/members1/alumni/david-munoz-tord/">Publications</a>
-          <a class="btn btn-secondary btn-l text-uppercase" href="https://github.com/munoztd0/Data_Wrangling_NeuroMaster">Talks & Workshops</a>
+          <a class="btn btn-secondary btn-l text-uppercase" href="https://github.com/munoztd0/Data_Wrangling_NeuroMaster">Workshops</a>
           <a class="btn btn-secondary btn-l text-uppercase" href="https://github.com/munoztd0">Github</a>
         </div>
       </div>
@@ -307,14 +307,14 @@
           <a data-toggle="modal" href="#dataViz" style="font-size: 23px">+</a>
         </div>
 
-        <div class="col-lg-3 text-center">
+        <!-- <div class="col-lg-3 text-center">
           <a href="teaching.html"><i class="fa fa-university services-logo"></i></a>
           <a href="teaching.html">
             <h4>Teaching & Training</h4>
           </a>
           <p>Short talks or multi-day courses on dataviz, R, ggplot2, data analytics and more. </p>
           <a href="teaching.html" style="font-size: 23px">+</a>
-        </div>
+        </div> -->
 
       </div>
     </div>
@@ -480,7 +480,7 @@
 
 
         <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper">
-          <a class="portfolio-link" data-toggle="modal" href="#BM">
+          <a class="portfolio-link" data-toggle="modal" href="#SBM">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <p>Sensory Brain Mapping</p>
@@ -493,22 +493,20 @@
           </a>
         </div>
 
-<!--
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper dashboard shiny">
-          <a class="portfolio-link" data-toggle="modal" href="#genMapComp">
+        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper ">
+          <a class="portfolio-link" data-toggle="modal" href="#BMS">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
-                <p>Genetic Map Comparator</p>
+                <p>Voxel-wise Bayesian model selection</p>
                 <hr>
-                <p class="explanation_portfolio">An online tool to compare genetic maps. Published in
-                  <i>Bioinformatics</i></p>
+                <p class="explanation_portfolio">A technique to compare brain maps using Bayesian methods.</p>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/GenMapComp.png" alt="">
+            <img class="img-fluid" src="img/portfolio/fmriBMS_short.png" alt="">
           </a>
         </div>
 
-
+<!--
 
         <div class="col-md-3 col-sm-6 portfolio-item show column dataviz dashboard shiny">
           <a class="portfolio-link" data-toggle="modal" href="#terresInovia">
@@ -1077,9 +1075,9 @@
       </div>
   </center>
 
-  <!-- Brain Mapping -->
+  <!-- Sensory Brain Mapping -->
 <center>
-  <div class="portfolio-modal modal fade" id="BM" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="SBM" tabindex="-1" role="dialog" aria-hidden="true">
     <div class='modal__overlay'></div>
     <div class='modal__content'>
     <div class="modal-dialog h-100">
@@ -1133,9 +1131,11 @@
 
 
 
-  Genetic Map Comparator 
+  <!--  Bayesian Model Selection -->
   <center>
-    <div class="portfolio-modal modal fade" id="genMapComp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="BMS" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class='modal__overlay'></div>
+      <div class='modal__content'>
       <div class="modal-dialog h-100">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -1147,37 +1147,31 @@
             <div class="row">
               <div class="col-lg-10 mx-auto">
                 <div class="modal-body">
-                  <img src="img/portfolio/GenMapComp.png" width="180px"></img>
-                  <h4>The Genetic Map Comparator.</h4>
-                  <p style="max-width: 600px">A web application made to compare genetic maps.</p>
-                  <a style="margin-top: 0px" class="btn btn-secondary btn text-uppercase js-scroll-trigger"
-                    href="http://www.agap-sunshine.inra.fr/genmapcomp/">Online app</a>
+                  <img src="img/portfolio/fmriBMS_short.png" width="180px"></img>
+                  <h4>Voxel-wise Bayesian model selection.</h4>
+                  <p style="max-width: 600px">A technique to compare brain maps using Bayesian methods.</p>
                   <br><br>
                   <div style="text-align: left">
                     <h6>Description</h6>
                     <hr>
-                    <p>Building and comparing genetic maps between several populations is a common task for
-                      geneticists.</p>
-                    <p>We've created an <a href="http://www.agap-sunshine.inra.fr/genmapcomp/">online tool</a>
-                      allowing to upload your maps and characterize and visualize them. Several interactive graphs are
-                      available with export options and more. The tool was created using <code>R</code> and
-                      <code>Shiny</code>, plus several <code>Html widgets</code> for interactivity.</p>
-                    <center><img src="img/portfolio/genmapcomp.jpg" width="80%"></img></center>
+                    <p>Building and comparing brain maps between several models is a common task for
+                      neuroscientist.</p>
+                    <p>Here we performed a Bayesian model selection (BMS) to select the best model given the data 
+                      for group-level analysis. This procedure computes the probability of the data given the model 
+                      (model evidence) for a set of candidate models. It also allows to compare characterize maps "heat zones" 
+                      and to visualize them. </p>
+                    <center><img src="img/portfolio/fmriBMS.png" width="80%"></img></center>
                     <h6>Read more</h6>
                     <hr>
-                    <span>The web application is available <a
-                        href="http://www.agap-sunshine.inra.fr/genmapcomp/">online</a>. You can read the scientific
-                      paper on <a
-                        href="https://academic.oup.com/bioinformatics/article-abstract/33/9/1387/2908431/The-genetic-map-comparator-a-user-friendly?redirectedFrom=fulltext">Bioinformatics</a>.
+                    <span>You can read the scientific paper on <a
+                        href="https://www.biorxiv.org/content/10.1101/2021.05.02.442349v1.full.pdf">BiorXiv</a>.
                       The source code of the project are on <a
-                        href="https://github.com/munoztd0/GenMap-Comparator">Github</a>.</span>
+                        href="https://github.com/evapool/VS_AffectiveResponse">Github</a>.</span>
                     <div style="margin-top: 5px;">
                       <a class="btn btn-secondary btn text-uppercase js-scroll-trigger"
-                        href="http://www.agap-sunshine.inra.fr/genmapcomp/">Online app</a>
+                        href="https://github.com/evapool/VS_AffectiveResponse">Github</a>
                       <a class="btn btn-secondary btn text-uppercase js-scroll-trigger"
-                        href="https://github.com/munoztd0/GenMap-Comparator">Github</a>
-                      <a class="btn btn-secondary btn text-uppercase js-scroll-trigger"
-                        href="https://academic.oup.com/bioinformatics/article-abstract/33/9/1387/2908431/The-genetic-map-comparator-a-user-friendly?redirectedFrom=fulltext">Paper</a>
+                        href="https://www.biorxiv.org/content/10.1101/2021.05.02.442349v1.full.pdf">Paper</a>
                     </div>
                   </div>
                 </div>
