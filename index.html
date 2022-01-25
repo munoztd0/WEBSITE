@@ -177,7 +177,7 @@
 
       <div class="row">
         <div class="col-lg-4 text-center">
-          <img class="img-fluid" src="img/team/DMT_pic_square.png" alt="David Muñoz Tord profile picture"
+          <img class="img-fluid" src="img/all/DMT_pic_square.png" alt="David Muñoz Tord profile picture"
             style="margin-bottom: 30px">
         </div>
         <div class="col-lg-8 text-center text-md-left">
@@ -455,8 +455,20 @@
 
    <style>
     .explanation_portfolio {
-      font-size: 14px;
+      font-size: small; 
+      /* font-size: 14px; */
       margin: 20px;
+    }
+    .title_portfolio {
+      font-size: medium; 
+      /* font-size: 14px; */
+      margin: 20px;
+    }
+
+    img.hbm {
+      padding-left: 40px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
   </style>
 
@@ -482,8 +494,9 @@
 
 
 
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper">
-          <a class="portfolio-link" data-toggle="modal" href="#SBM">
+        <div class="col-md col-sm portfolio-item show column dataviz paper">
+          
+          <div class="portfolio-link" data-toggle="modal" href="#SBM">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <p>Sensory Brain Mapping</p>
@@ -492,20 +505,38 @@
                   fundamental processes of taste perception.<br></p>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/brain_short.png" alt="">
-          </a>
+            <img class="sbs" src="img/portfolio/braininfl2.gif" alt="" width="100%">
+          </div>
+        
         </div>
 
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper ">
+        <div class="col-md-1 col-sm-6 portfolio-item show column dataviz paper">
+        </div>
+
+        <div class="col-md-3 col-sm-6 portfolio-item show column mining dataviz paper ">
           <a class="portfolio-link" data-toggle="modal" href="#BMS">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <p>Voxel-wise Bayesian model selection</p>
-                <hr>
                 <p class="explanation_portfolio">A technique to compare brain maps using Bayesian methods.</p>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/fmriBMS_short.png" alt="">
+            <img src="img/portfolio/fmriB.png" alt="" width="110%">
+          </a>
+        </div>
+
+        <div class="col-md-1 col-sm-6 portfolio-item show column dataviz paper">
+        </div>
+
+        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper ">
+          <a class="portfolio-link" data-toggle="modal" href="#hbayes">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p>Hierarchical Bayesian Modeling</p>
+                <p class="explanation_portfolio">A package that offers hierarchical Bayesian analysis of various computational models.</p>
+              </div>
+            </div>
+            <img class="hbm" src="img/portfolio/hmbayes.png" alt="" width="90%">
           </a>
         </div>
 
@@ -1106,7 +1137,8 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <div class="modal-body">
-                <img src="img/portfolio/brain_short.png" width="180">
+                <img src="img/portfolio/braininfl2.gif" width="180">
+                <!-- <img src="img/portfolio/brain_short.png" width="180"> -->
                 <h4>Sensory Brain Mapping</h4>
                 <p style="max-width: 600px"></p>
                 <br><br>
@@ -1121,6 +1153,7 @@
                       for fMRI-Compatible Gustometers</a>.</p>
                   <img src="img/portfolio/brain.png" style="width:100%;">
                   <p>My work allowed to visualize the parameter distribution of the BOLD signal in 3D.</p>
+                  <img src="img/portfolio/brainrot.gif" style="width:100%;">
                   <h6>Read more</h6>
                   <hr>
                   <span>You can read the scientific paper on

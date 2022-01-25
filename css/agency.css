@@ -1,4 +1,5 @@
 /* ---------- General ----------------- */
+
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -354,13 +355,12 @@ header.masthead .intro-text .intro-heading {
 
 
 
-
-
-
-
-#portfolio .portfolio-item {
-  right: 0;
-  margin: 0 0 15px;
+.portfolio .portfolio-item {
+  height: auto !important;
+  width: auto !important; 
+  margin: 100px 100px 15px;  
+  padding-right: 10px; 
+  padding-bottom: 10px;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -432,11 +432,27 @@ header.masthead .intro-text .intro-heading {
   z-index: 2;
 }
 
+/* img {
+  position: absolute;
+  margin: auto;
+} */
+
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
-    margin: 0 0 30px;
+    /* margin: 0 0 30px; */
+    width: 10%;
+    position:inherit;
   }
 }
+
+@media (min-width: 767px) {
+  #portfolio .portfolio-link {
+    /* margin: 0 0 30px; */
+    width: 100%;
+    
+  }
+}
+
 
 
 .column {
@@ -539,6 +555,7 @@ header.masthead .intro-text .intro-heading {
 
 /* -------------------- MODAL ------------------ */
 
+
 /* width of modal: different following the device: small (100%), medium(50%), large(30%); */
 .portfolio-modal .modal-dialog {
   margin: 3rem;
@@ -546,6 +563,7 @@ header.masthead .intro-text .intro-heading {
   max-height: 95vh;
   overflow-y: auto;
 }
+
 @media (min-width: 1000px) {
   .portfolio-modal .modal-dialog {
     max-width: 70vw;
