@@ -66,7 +66,7 @@
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
       <a class="js-scroll-trigger" href="#page-top">
-        <i class="fa fa-home"></i>
+        <i class="fa fa-home fa-2x"></i>
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -172,7 +172,7 @@
 
   <!-- =======================  DESCRIPTION SECTION ======================= -->
 
-  <section id="description" class="bg-light">
+  <section id="description" class="bg-white">
     <div class="container">
 
       <div class="row">
@@ -267,7 +267,7 @@
     }
   </style>
 
-  <section id="services" class="bg">
+  <section id="services" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center" style="padding-bottom: 3%">
@@ -472,7 +472,7 @@
     }
   </style>
 
-  <section class="bg-light" id="portfolio">
+  <section class="bg-white" id="portfolio">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -481,6 +481,8 @@
           <div id="portfolio-button-container">
             <button class="btn btn-secondary active" data-portfolio-section="all">Show all</button>
             <button class="btn btn-secondary" data-portfolio-section="mining">Data mining</button>
+            <button class="btn btn-secondary" data-portfolio-section="ml">Machine Learning</button>
+            <button class="btn btn-secondary" data-portfolio-section="stat">Statistical Tools</button>
             <button class="btn btn-secondary" data-portfolio-section="dataviz">Dataviz</button>
             <button class="btn btn-secondary" data-portfolio-section="paper">Scientific paper</button>
             <!-- <button class="btn btn-secondary" data-portfolio-section="dashboard">Dashboard</button> -->
@@ -494,8 +496,7 @@
 
 
 
-        <div class="col-md col-sm portfolio-item show column dataviz paper">
-          
+        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper">
           <div class="portfolio-link" data-toggle="modal" href="#SBM">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -505,12 +506,21 @@
                   fundamental processes of taste perception.<br></p>
               </div>
             </div>
-            <img class="sbs" src="img/portfolio/braininfl2.gif" alt="" width="100%">
+            <img  src="img/portfolio/braininfl2.gif" alt="" width="110%">
           </div>
-        
         </div>
 
-        <div class="col-md-1 col-sm-6 portfolio-item show column dataviz paper">
+
+        <div class="col-md-3 col-sm-6 portfolio-item show column stat ml">
+          <a class="portfolio-link" data-toggle="modal" href="#hbayes">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p>Hierarchical Bayesian Modeling</p>
+                <p class="explanation_portfolio">A package that offers hierarchical Bayesian analysis of various computational models.</p>
+              </div>
+            </div>
+            <img  src="img/portfolio/hyperparameters-1.gif" alt="" width="110%">
+          </a>
         </div>
 
         <div class="col-md-3 col-sm-6 portfolio-item show column mining dataviz paper ">
@@ -521,169 +531,24 @@
                 <p class="explanation_portfolio">A technique to compare brain maps using Bayesian methods.</p>
               </div>
             </div>
-            <img src="img/portfolio/fmriB.png" alt="" width="110%">
+            <img src="img/portfolio/fmriB.png" alt="" width="90%">
           </a>
         </div>
 
-        <div class="col-md-1 col-sm-6 portfolio-item show column dataviz paper">
-        </div>
 
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper ">
-          <a class="portfolio-link" data-toggle="modal" href="#hbayes">
+        <div class="col-md-3 col-sm-6 portfolio-item show column mining ml ">
+          <a class="portfolio-link" data-toggle="modal" href="#MarioRL">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
-                <p>Hierarchical Bayesian Modeling</p>
-                <p class="explanation_portfolio">A package that offers hierarchical Bayesian analysis of various computational models.</p>
+                <p>AI Building</p>
+                <p class="explanation_portfolio">Building AI to play games.</p>
               </div>
             </div>
-            <img class="hbm" src="img/portfolio/hmbayes.png" alt="" width="90%">
-          </a>
-        </div>
-
-<!--
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz dashboard shiny">
-          <a class="portfolio-link" data-toggle="modal" href="#terresInovia">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Dashboard for Terres Inovia</p>
-                <hr>
-                <p class="explanation_portfolio">A dashboard allowing to quickly access information in <i>Terres
-                    Inovia</i> database</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/TI4.png" alt="">
+            <img class="hbm" src="img/portfolio/mario.gif" alt="" width="80%">
           </a>
         </div>
 
 
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz paper shiny">
-          <a class="portfolio-link" data-toggle="modal" href="#comoProject">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>The Como Project</p>
-                <hr>
-                <p class="explanation_portfolio">Webpage describing a study of interconnection between mental disorders.
-                  Published in <i>JAMA Psychiatry</i><br><br></p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/como.png" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz mining">
-          <a class="portfolio-link" data-toggle="modal" href="#authorRelation">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Co-authorship network</p>
-                <hr>
-                <p class="explanation_portfolio">Visualize how all the co-authors of my previous supervisor are inter
-                  connected.<br></p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/Network_Coauthor.png" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 portfolio-item show  column dataviz ">
-          <a class="portfolio-link" href="blog/dataToViz.html">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>From data to viz</p>
-                <hr>
-                <p class="explanation_portfolio">A classification of chart types based on input data format</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/poster_sample.png" alt="data to viz logo">
-          </a>
-        </div>
-
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column dashboard shiny mining">
-          <a class="portfolio-link" data-toggle="modal" href="#greenTech">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>GreenTech Challenge</p>
-                <hr>
-                <p class="explanation_portfolio">A dataviz challenge on water pollution in France. Third price at the
-                  <i>GreenTech Challenge.</i></p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/GreenTech.png" alt="">
-          </a>
-        </div>
-
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column paper dashboard shiny">
-          <a class="portfolio-link" data-toggle="modal" href="#unics">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>UNICS</p>
-                <hr>
-                <p class="explanation_portfolio">Online tool to estimate standard error of allele frequency in
-                  pool-sequencing experiments. Published in <i>Molecular Ecology</i></p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/Unics.png" alt="">
-          </a>
-        </div>
-
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column mining" style="background-color: white;">
-          <a class="portfolio-link" target="_blank" href="https://munoztd0.github.io/Crypto-Arbitrage/">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Crypto Arbitrage</p>
-                <hr>
-                <p class="explanation_portfolio">A data driven study of crypto arbitrage feasability.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/Crypto.png" alt="" align="middle">
-          </a>
-        </div>
-
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column mining">
-          <a class="portfolio-link" data-toggle="modal" href="#surfers">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Where Surfers travel</p>
-                <hr>
-                <p class="explanation_portfolio">Harvesting millions of tweets to understand where surfer travel</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/Surf.png" alt="">
-          </a>
-        </div>
-
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column paper mining">
-          <a class="portfolio-link" target="_blank" href="https://link.springer.com/article/10.1007/s00122-017-2904-6">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Wheat resistance to<br>the WSSMV virus</p>
-                <hr>
-                <p class="explanation_portfolio">A scientific publication in Theoretical and Applied Genetics.</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/WSSMV.png" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column paper mining">
-          <a class="portfolio-link" target="_blank"
-            href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0154609">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Genotyping by sequencing</p>
-                <hr>
-                <p class="explanation_portfolio">Genotyping by Sequencing Using Specific Allelic Capture to Build a
-                  High-Density Genetic Map of Durum Wheat</p>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/capture.png" alt="">
-          </a>
-        </div>-->
 
 
       </div>
@@ -921,8 +786,8 @@
       <div class='modal__content'>
       <div class="modal-dialog h-100">
         <div class="modal-content">
-          <span class="btn_close">
-            <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
+          <span class="btn_close btn-lg">
+            <i class="fa fa-times fa-2x" aria-hidden="true" data-dismiss="modal"></i>
          </span>
           <!-- <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -1125,8 +990,8 @@
     <div class='modal__content'>
     <div class="modal-dialog h-100">
       <div class="modal-content">
-        <span class="btn_close">
-          <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
+        <span class="btn_close btn-lg">
+          <i class="fa fa-times fa-2x" aria-hidden="true" data-dismiss="modal"></i>
        </span>
         <!-- <div class="close-modal" data-dismiss="modal">
           <div class="lr">
@@ -1186,8 +1051,8 @@
       <div class='modal__content'>
       <div class="modal-dialog h-100">
         <div class="modal-content">
-          <span class="btn_close">
-            <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
+          <span class="btn_close btn-lg">
+            <i class="fa fa-times fa-2x" aria-hidden="true" data-dismiss="modal"></i>
          </span>
           <!-- <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -1198,7 +1063,7 @@
             <div class="row">
               <div class="col-lg-10 mx-auto">
                 <div class="modal-body">
-                  <img src="img/portfolio/fmriBMS_short.png" width="180px"></img>
+                  <img src="img/portfolio/fmriB.png" width="180px"></img>
                   <h4>Voxel-wise Bayesian model selection.</h4>
                   <p style="max-width: 600px">A technique to compare brain maps using Bayesian methods.</p>
                   <br><br>
@@ -1207,11 +1072,12 @@
                     <hr>
                     <p>Building and comparing brain maps between several models is a common task for
                       neuroscientist.</p>
+                      <center><img src="img/portfolio/SOCH.jpg" width="50%"></img></center>
                     <p>Here we performed a Bayesian model selection (BMS) to select the best model given the data 
                       for group-level analysis. This procedure computes the probability of the data given the model 
                       (model evidence) for a set of candidate models. It also allows to compare characterize maps "heat zones" 
                       and to visualize them. </p>
-                    <center><img src="img/portfolio/fmriBMS.png" width="80%"></img></center>
+                    <center><img src="img/portfolio/fmriBMS.png" width="50%"></img></center>
                     <h6>Read more</h6>
                     <hr>
                     <span>You can read the scientific paper on <a
@@ -1231,7 +1097,129 @@
           </div>
         </div>
       </div>
-  </center> -->
+  </center> 
+
+
+
+<!-- Hierachical Bayesian -->
+<center>
+  <div class="portfolio-modal modal fade" id="hbayes" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class='modal__overlay'></div>
+    <div class='modal__content'>
+    <div class="modal-dialog h-100">
+      <div class="modal-content">
+        <span class="btn_close btn-lg">
+          <i class="fa fa-times fa-2x" aria-hidden="true" data-dismiss="modal"></i>
+       </span>
+        <!-- <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div> -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <img src="img/portfolio/hmbayes.png" width="180">
+                <!-- <img src="img/portfolio/brain_short.png" width="180"> -->
+                <h4>Hierarchical Bayesian Modeling</h4>
+                <p style="max-width: 600px"></p>
+                <br><br>
+                <div style="text-align: left">
+                  <h6>Description</h6>
+                  <hr>
+                  <p> I collaborated on the Hierarchical Bayesian modeling of Decision-Making tasks library <a href="https://github.com/CCS-Lab/hBayesDM/">
+                    hBayesDM</a>. <a href="https://github.com/CCS-Lab/hBayesDM/">
+                      hBayesDM</a> is a user-friendly package that offers hierarchical Bayesian analysis of various computational models on an array 
+                      of decision-making tasks. 
+
+                      <img src="img/portfolio/simmu.png" style="width:100%;">
+                      
+                      It uses <a href="https://mc-stan.org//"> STAN</a> for Bayesian inference and supports both 
+                      <a href="https://cran.r-project.org/web/packages/hBayesDM/index.html">R</a> and <a href="https://pypi.org/project/hbayesdm/">Python</a>. 
+                      <a href="https://github.com/CCS-Lab/hBayesDM/"> hBayesDM</a>'s goal is to help interpreting experimental data through computational
+                      models using a full Bayesian statistical inference approach with MCMC sampling.
+
+                  <!-- <img src="img/portfolio/brain.png" style="width:100%;"> -->
+                  <p>My work involved the implementation of the Q-learning algorithm for reinforcement learning tasks.</p>
+                  <center><img src="img/portfolio/RL.gif" style="width:70%;"></center>
+                  <h6>Read more</h6>
+                  <hr>
+                  <span>You can check my project contributions on <a
+                      href="https://github.com/CCS-Lab/hBayesDM/commit/279b7eafaea9e05c2dc741ea9c86623abf35c6e5">Github</a>.</span>
+                  <div style="margin-top: 5px;">
+                    <a class="btn btn-secondary btn text-uppercase js-scroll-trigger"
+                      href="https://github.com/CCS-Lab/hBayesDM/commit/279b7eafaea9e05c2dc741ea9c86623abf35c6e5">Github</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>
+   </div>
+  </div> 
+</center>
+
+
+
+
+<!-- Hierachical Bayesian -->
+<center>
+  <div class="portfolio-modal modal fade" id="MarioRL" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class='modal__overlay'></div>
+    <div class='modal__content'>
+    <div class="modal-dialog h-100">
+      <div class="modal-content">
+        <span class="btn_close btn-lg">
+          <i class="fa fa-times fa-2x" aria-hidden="true" data-dismiss="modal"></i>
+       </span>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <img src="img/portfolio/mario.gif" width="180">
+                <h4>AI Building</h4>
+                <p style="max-width: 600px"></p>
+                <br><br>
+                <div style="text-align: left">
+                  <h6>Description</h6>
+                  <hr>
+                  <p> <a href="https://github.com/CCS-Lab/hBayesDM/"></a>   from openAI gym tools
+                    reinforcement learning algorithms in PyTorch.   training a PPO with actor/critic networks being CNNs
+                    SuperMarioBros  training with convolutional neural network (CNN)   Proximal Policy Optimization (PPO), 
+                    
+
+
+                      <img src="img/portfolio/simmu.png" style="width:100%;">
+                      
+                      It uses <a href="https://mc-stan.org//"> STAN</a> for Bayesian inference and supports both 
+                      <a href="https://cran.r-project.org/web/packages/hBayesDM/index.html">R</a> and <a href="https://pypi.org/project/hbayesdm/">Python</a>. 
+                      <a href="https://github.com/CCS-Lab/hBayesDM/"> hBayesDM</a>'s goal is to help interpreting experimental data through computational
+                      models using a full Bayesian statistical inference approach with MCMC sampling.
+
+                  <!-- <img src="img/portfolio/brain.png" style="width:100%;"> -->
+                  <p>My work involved the implementation of the Q-learning algorithm for reinforcement learning tasks.</p>
+                  <center><img src="img/portfolio/RL.gif" style="width:70%;"></center>
+                  <h6>Read more</h6>
+                  <hr>
+                  <span>You can check my project contributions on <a
+                      href="https://github.com/munoztd0/MarioRL">Github</a>.</span>
+                  <div style="margin-top: 5px;">
+                    <a class="btn btn-secondary btn text-uppercase js-scroll-trigger"
+                      href="https://github.com/munoztd0/MarioRL">Github</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>
+   </div>
+  </div> 
+</center>
 
 
   <!-- Danish como project -->
