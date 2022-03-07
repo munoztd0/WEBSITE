@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
+<!-- todo -->
 
 <head>
 
@@ -44,6 +45,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
@@ -137,15 +139,19 @@
                 </li>
             </ul>
             <br><br>
-            <p> Data analysis and data visualisation.</p>
+            <p> Data analysis and data visualization.</p>
+            <br><br>
             <!-- Freelance -->
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#description">Visit</a>
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Contact</a>
-        </div>
-        <div class="arrowlanding">
-            <a class="js-scroll-trigger" href="#description">
-                <p style="font-size: 80px; color: #69b3a2">&#xfe40;</p>
-            </a>
+            <div class="d-flex justify-content-between">
+                <a href="#description" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">Visit</a>
+                <a href="#contact" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">Contact</a>
+            </div>
+            <br><br>
+            <div class="arrowlanding">
+                <a class="js-scroll-trigger" href="#description">
+                    <p style="font-size: 80px; color: #69b3a2">&#xfe40;</p>
+                </a>
+            </div>
         </div>
     </header>
 
@@ -171,20 +177,28 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 col-md-8 col-sm-8 text-center">
                     <img class="img-fluid" src="img/all/DMT_pic_square.png" alt="David Muñoz Tord profile picture" style="margin-bottom: 30px">
                 </div>
-                <div class="col-lg-8 text-center text-md-left">
+                <!-- <div class="col-lg-8">
+                    <br><br> -->
+                <div class="col-lg-8 col-md-8 col-sm-10">
+                    <br><br>
                     <p>Hi, I'm David.</p>
                     <p>My job consists in helping companies and researchers to analyse their datasets. I am skilled for most data-science steps: data pre-processing, application of statistical methods, data visualization and results communication.
                     </p>
-                    <p>After having worked for renowned research institutes like the <a href="https://neurocenter-unige.ch/">Geneva Neurocenter</a> and the <a href="https://www.unige.ch/cisa/">Swiss Center 
-            for Affective Sciences</a>, I'm now working as a data scientist.</p>
-                    <!-- a freelance -->
-                    <a class="btn btn-secondary btn-l text-uppercase" href="https://github.com/munoztd0/publications">Publications</a>
-                    <a class="btn btn-secondary btn-l text-uppercase" href="https://www.unige.ch/fapse/e3lab/members1/alumni/david-munoz-tord/">Publications</a>
-                    <a class="btn btn-secondary btn-l text-uppercase" href="https://github.com/munoztd0/Data_Wrangling_NeuroMaster">Workshops</a>
-                    <a class="btn btn-secondary btn-l text-uppercase" href="https://github.com/munoztd0">Github</a>
+                    <p>After having worked for renowned research institutes like the <a href=" https://neurocenter-unige.ch/">Geneva Neurocenter</a> and the <a href="https://www.unige.ch/cisa/">Swiss Center 
+                            for Affective Sciences</a>, I'm now working as a freelance data scientist.</p>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-5 col-sm-3 text-right">
+                            <a class="btn flex-fill btn-secondary btn-l text-uppercase" href="https://github.com/munoztd0/publications">Publications</a>
+                            <a class="btn flex-fill btn-secondary btn-l text-uppercase" href="https://github.com/munoztd0/teaching">Teaching</a>
+                            <a class="btn flex-fill btn-secondary btn-l text-uppercase" href="https://github.com/munoztd0">Github</a>
+                            <a class="btn flex-fill btn-secondary btn-l text-uppercase" href="https://github.com/munoztd0/CV_DMT/raw/main/CV_DMT.pdf">CV</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -219,8 +233,8 @@
             <text style="font-style: italic" font-size="13" text-anchor="middle" x="750" y="95" fill="#808080">Univeristy of Geneva</text>
 
             <text font-size="13" text-anchor="middle" x="930" y="30" fill="black">Data - Science - Viz</text>
-            <!-- <text style="font-style: italic" font-size="13" text-anchor="middle" x="930" y="80"
-              fill="#808080">Freelance</text> -->
+            <text style="font-style: italic" font-size="13" text-anchor="middle" x="930" y="80"
+              fill="#808080">Freelance</text>
 
           </svg>
                 </div>
@@ -303,12 +317,12 @@
                 </div>
 
                 <div class="col-lg-3 text-center">
-                    <a href="teaching.html"><i class="fa fa-university services-logo"></i></a>
-                    <a href="teaching.html">
+                    <a href="https://github.com/munoztd0/teaching"><i class="fa fa-university services-logo"></i></a>
+                    <a href="https://github.com/munoztd0/teaching">
                         <h4>Teaching & Training</h4>
                     </a>
                     <p>Short talks or multi-day courses on dataviz, R, ggplot2, data analytics and more. </p>
-                    <a href="#teach" style="font-size: 23px">+</a>
+                    <a href="https://github.com/munoztd0/teaching" style="font-size: 23px">+</a>
                 </div>
 
             </div>
@@ -445,25 +459,8 @@
     <!-- Add white space on the side to have the good size: convert -size 380x445 xc:white new.png  -gravity center -composite output.png -->
     <!-- Or adapt to add height on top / bottom -->
 
-    <style>
-        .explanation_portfolio {
-            font-size: small;
-            /* font-size: 14px; */
-            margin: 20px;
-        }
-        
-        .title_portfolio {
-            font-size: medium;
-            /* font-size: 14px; */
-            margin: 20px;
-        }
-        
-        img.hbm {
-            padding-left: 40px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-    </style>
+
+
 
     <section class="bg-white" id="portfolio">
         <div class="container">
@@ -477,9 +474,6 @@
                         <button class="btn btn-secondary" data-portfolio-section="ml">Machine Learning</button>
                         <button class="btn btn-secondary" data-portfolio-section="stat">Statistical Tools</button>
                         <button class="btn btn-secondary" data-portfolio-section="dataviz">Dataviz</button>
-                        <!-- <button class="btn btn-secondary" data-portfolio-section="paper">Scientific paper</button> -->
-                        <!-- <button class="btn btn-secondary" data-portfolio-section="dashboard">Dashboard</button> -->
-                        <!-- <button class="btn btn-secondary" data-portfolio-section="shiny">Shiny</button> -->
                     </div>
                     <br>
                 </div>
@@ -515,7 +509,7 @@
                     </a>
                 </div>
 
-                <div class="col-md-3 col-sm-6 portfolio-item show column mining dataviz ">
+                <div class="col-md-3 col-sm-6 portfolio-item show column mining dataviz">
                     <a class="portfolio-link" data-toggle="modal" href="#BMS">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -528,7 +522,7 @@
                 </div>
 
 
-                <div class="col-md-3 col-sm-6 portfolio-item show column mining ml ">
+                <div class="col-md-3 col-sm-6 portfolio-item show column mining ml">
                     <a class="portfolio-link" data-toggle="modal" href="#MarioRL">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -540,8 +534,34 @@
                     </a>
                 </div>
 
+            </div>
+            <!-- row2 -->
+            <div id="portfolio-items" class="row">
+
+                <div class="col-md-3 col-sm-6 portfolio-item show column dataviz stat ml">
+                    <a class="portfolio-link" data-toggle="modal" href="#WeData">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <p>We Data Organization</p>
+                                <p class="explanation_portfolio">We Data is an organization that shares knowledge on code in social sciences.</p>
+                            </div>
+                        </div>
+                        <img class="tbt" src="img/portfolio/wedata.gif" alt="we data logo" width="95%">
+                    </a>
+                </div>
 
 
+                <div class="col-md-3 col-sm-6 portfolio-item show column dataviz stat ml">
+                    <a class="portfolio-link" data-toggle="modal" href="#IQM">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <p>Image Quality Metrics</p>
+                                <p class="explanation_portfolio"> Context for MRI image quality metrics (IQMs)</p>
+                            </div>
+                        </div>
+                        <img class="iqm" src="img/portfolio/IQM.gif" alt="loop of quality metrics" width="80%">
+                    </a>
+                </div>
 
             </div>
         </div>
@@ -558,14 +578,13 @@
 
     <!-- =========================== REFERENCE SECTION ============================ -->
 
-
-    <section id="testimonial">
+    <section class="bg-light" id="testimonial">
         <div class="container">
 
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
 
-                    <div class="carousel-item active">
+                    <div class="carousel-item active bg-light">
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-6" style="text-align: center">
                                 <img src="img/reference/biotech.jpg" style="border-radius: 50%" width="170px">
@@ -576,14 +595,14 @@
                   on a project where he successfully adapted a data analysis pipeline developed 
                   at the California Institute of Technology to retrieve physiological signal from 
                   a very noisy dataset. [...] David also has impressive skills in data visualization, 
-                  which were critical for a clear and transparent communication of the results. "</i></p>
+                  which were critical for a clear and transparent communication of the results."</i></p>
                                 <p><a href="https://www.unige.ch/fapse/e3lab/members1/senior-researchers-and-lecturers/dr-eva-r-pool/">Dr. Eva R. Pool</a> - <span style="font-size: 12px; display: inline;"><i>Senior Researcher at <a
                         href="https://www.campusbiotech.ch/en">Campus Biotech</a></i></span></p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="carousel-item">
+                    <div class="carousel-item bg-light">
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-6" style="text-align: center">
                                 <img src="img/reference/CISA.jpg" style="border-radius: 50%" width="170px">
@@ -600,7 +619,7 @@
                         </div>
                     </div>
 
-                    <div class="carousel-item">
+                    <div class="carousel-item bg-light">
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-6" style="text-align: center">
                                 <img src="img/reference/BBL.jpg" style="border-radius: 50%" width="170px">
@@ -618,7 +637,7 @@
                         </div>
                     </div>
 
-                    <div class="carousel-item">
+                    <div class="carousel-item bg-light">
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-6" style="text-align: center">
                                 <img src="img/reference/neuro.jpg" style="border-radius: 50%;" width="170px">
@@ -635,6 +654,32 @@
                             </div>
                         </div>
                     </div>
+
+
+                    <div class="carousel-item bg-light">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6" style="text-align: center">
+                                <img src="img/reference/Fer.jpeg" style="border-radius: 50%;" width="170px">
+                            </div>
+                            <div class="col-lg-8 col-md-6 col-sm-6 text-center text-md-left">
+                                <br>
+                                <p style="color: grey; font-size: 8"><i>"David is a promising data scientist with 
+                                    expertise in MRI methods. He has great programming and statistics skills, with a 
+                                    strong grasp of cutting-edge data classification and machine learning algorithms. 
+                                    Autonomous, as he finds the best solutions to the problems submitted to him, and also 
+                                    well structured and organized, with clean & clear datasets, result files, and software 
+                                    outputs. I have no hesitation in recommending him, as he has a bright future. I'm sure 
+                                    any company will be happy to have him on their team."</i></p>
+                                <p>
+                                    <a href="https://www.linkedin.com/in/munozfer/h"></a> Fernando Muñoz - <span style="font-size: 12px; display: inline;">
+                                        <i>Business Representative at <a
+                        href="https://github.com">GitHub Enterprise</a></i></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
 
                 </div>
 
@@ -669,12 +714,11 @@
 
     <!-- ======================= CONTACT SECTION =============================== -->
 
-    <section id="contact" class="bg-light">
+    <section id="contact" class="bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 text-center"></div>
                 <div class="col-lg-8 text-center">
-                    <br><br><br>
                     <h2 class="section-heading text-uppercase" style="color: black">Contact</h2>
                     <p>Feel free to contact me for any question. For open source projects, please open an issue or pull request on
                         <a href="https://github.com/munoztd0/">Github</a>. If you want to follow my work, reach me by email at <a href="mailto:david.munoztord@mailbox.org">david.munoztord@mailbox.org</a>.</p>
@@ -1058,7 +1102,7 @@
                                             <center><img src="img/portfolio/SOCH.jpg" width="50%"></img>
                                             </center>
                                             <p>Here we performed a Bayesian model selection (BMS) to select the best model given the data for group-level analysis. This procedure computes the probability of the data given the model (model evidence) for a
-                                                set of candidate models. It also allows to compare characterize maps "heat zones" and to visualize them. </p>
+                                                set of candidate models. It also allows to compare characterize maps"heat zones" and to visualize them. </p>
                                             <center><img src="img/portfolio/fmriBMS.png" width="50%"></img>
                                             </center>
                                             <h6>Read more</h6>
@@ -1082,7 +1126,7 @@
 
 
 
-    <!-- Hierachical Bayesian -->
+    <!-- Hierarchical Bayesian -->
     <center>
         <div class="portfolio-modal modal fade" id="hbayes" tabindex="-1" role="dialog" aria-hidden="true">
             <div class='modal__overlay'></div>
@@ -1139,8 +1183,6 @@
     </center>
 
 
-
-
     <!-- AI RL -->
     <center>
         <div class="portfolio-modal modal fade" id="MarioRL" tabindex="-1" role="dialog" aria-hidden="true">
@@ -1149,88 +1191,85 @@
                 <div class="modal-dialog h-100">
                     <div class="modal-content">
                         <span class="btn_close btn-lg">
-          <i class="fa fa-times fa-2x" aria-hidden="true" data-dismiss="modal"></i>
-       </span>
+      <i class="fa fa-times fa-2x" aria-hidden="true" data-dismiss="modal"></i>
+   </span>
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-10 mx-auto">
                                     <div class="modal-body">
-                                        <img src="img/portfolio/mario.gif" width="180">
-                                        <h4>AI Building</h4>
+                                        <img src="img/portfolio/life_game.gif" width="180">
+                                        <h4>Training AI agents to play and solve games</h4>
                                         <p style="max-width: 600px"></p>
+                                        <hr>
                                         <br><br>
+
                                         <div style="text-align: left">
-                                            <h6>Description</h6>
+
+                                            <h4>Gaming Reinforcement Learning with PyTorch (Super Mario Bros)</h4>
+
+                                            <br>
+
+
+                                            <center><img src="img/portfolio/mario.gif" style="width:50%;"></center>
+                                            <br> Here I used <a href="https://openai.com/">OpenAI</a> gym tools to build a Super Mario Bros environment, and trained a Proximal Policy Optimization (PPO) algorithm with actor/critic networks being convolutional
+                                            neural networks (CNNs) with <a href="https://pytorch.org/PyTorch">PyTorch</a> to play the game with reduced actions. I also used <a href="https://www.tensorflow.org/tensorboard/">TensorBoard</a> to visualize
+                                            and evaluate the quality metrics of the model.
+
+                                            <br>
+                                            <br>
+
+                                            <center> <img src="img/portfolio/tensor.gif" style="width:100%;"></center>
+
+
+
+                                            <span>You can check the project <a href="https://github.com/munoztd0/AI_games/tree/master/MarioRL">Github</a>.</span>
                                             <hr>
-                                            <p> Training AI agents to play games.
-                                                <br>
+                                            <br> <br>
+
+                                            <h4>Multiplayer AI programming online game</h4>
+                                            <br>
+                                            <center><img src="img/portfolio/leek.gif" style="width:50%;"></center>
+                                            <br>
+
+                                            <a href="https://leekwars.com/">Leek Wars</a> is a multiplayer AI programming game in which you train leeks to fight each others. The language of Leek Wars is LeekScript, built in Java. Follow my leek
+                                            <a href="https://leekwars.com/leek/82556">@leakit22</a> ! I remain in the top 100 for the time being.
+
+                                            <br>
+                                            <br>
 
 
-                                                <center><img src="img/portfolio/mario.gif" style="width:50%;"></center>
-                                                <br> Here I used <a href="https://openai.com/">OpenAI</a> gym tools to build a Super Mario Bros environment, and trained a Proximal Policy Optimization (PPO) algorithm with actor/critic networks being convolutional
-                                                neural networks (CNNs) with <a href="https://pytorch.org/PyTorch">PyTorch</a> to play the game with reduced actions. I also used <a href="https://www.tensorflow.org/tensorboard/">TensorBoard</a> to visualize
-                                                and evaluate the quality metrics of the model.
-
-                                                <br>
-                                                <br>
-
-                                                <center> <img src="img/portfolio/tensor.gif" style="width:100%;"></center>
-
-
-                                                <hr>
-                                                <span>You can check the project <a
-                      href="https://github.com/munoztd0/AI_games/tree/master/MarioRL">Github</a>.</span>
-
-                                                <br> <br>
-
-
-                                                <center><img src="img/portfolio/leek.gif" style="width:50%;"></center>
-                                                <br>
-                                                <a href="https://leekwars.com/">Leek Wars</a> is a multiplayer AI programming game in which you train leeks to fight each others. The language of Leek Wars is LeekScript, built in Java. Follow my leek
-                                                <a href="https://leekwars.com/leek/82556">@leakit22</a> ! I remain in the top 100 for the time being.
-
-                                                <br>
-                                                <br>
-
-                                                <center> <img src="img/portfolio/leekwars.png" style="width:100%;"></center>
-
-
-                                                <hr>
-                                                <span>You can check the AI on <a
-                  href="https://github.com/munoztd0/AI_games/tree/master/Leek_Wars">Github</a>.</span>
-
-
-                                                <br>
-                                                <br>
-
-                                                <center><img src="img/portfolio/life_game.gif" style="width:50%;"></center>
-
-                                                Conway's Game Of Life implemented in python. The “game” is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing
-                                                how it evolves, or, for advanced “players”, by creating patterns with particular properties. How the game works Because the Game of Life is built on a grid of nine squares, every cell has eight neighboring
-                                                cells,as shown in the given figure. A given cell (i, j) in the simulation is accessed on a grid [i][j], where i and j are the row and column indices, respectively. The value of a given cell at a given instant
-                                                of time depends on the state of its neighbors at the previous time step. Conway’s Game of Life has four rules. If a cell is ON and has fewer than two neighbors that are ON, it turns OFF If a cell is ON and
-                                                has either two or three neighbors that are ON, it remains ON. If a cell is ON and has more than three neighbors that are ON, it turns OFF. If a cell is OFF and has exactly three neighbors that are ON, it
-                                                turns ON.
+                                            <center> <img src="img/portfolio/leekwars.png" style="width:100%;"></center>
 
 
 
+                                            <span>You can check the AI on <a
+              href="https://github.com/munoztd0/AI_games/tree/master/Leek_Wars">Github</a>.</span>
+                                            <hr>
 
-                                                <div style="margin-top: 5px;">
-                                                    <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/munoztd0/AI_games/">Github</a>
-                                                </div>
+                                            <br>
+                                            <br>
+
+                                            <h4>Conway's Game Of Life implemented in Python</h4>
+                                            <br><br>
+                                            <center><img src="img/portfolio/life_game.gif" style="width:40%;"></center>
+
+                                            The “game” is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves, or, for advanced “players”,
+                                            by creating patterns with particular properties. How the game works Because the Game of Life is built on a grid of nine squares, every cell has eight neighboring cells,as shown in the given figure.
+                                            <br> <br> A given cell (i, j) in the simulation is accessed on a grid [i][j], where i and j are the row and column indices, respectively. The value of a given cell at a given instant of time depends on the state
+                                            of its neighbors at the previous time step.<br>
+                                            <br> Conway's Game of Life has four rules: <br><br> 1) If a cell is ON and has fewer than two neighbors that are ON, it turns OFF.<br> 2) If a cell is ON and has either two or three neighbors that are ON, it
+                                            remains ON.
+                                            <br> 3) If a cell is ON and has more than three neighbors that are ON, it turns OFF. <br> 4) If a cell is OFF and has exactly three neighbors that are ON, it turns ON.<br>
+                                            <br><br> The bulk of the graphical implementation was made using <a href="https://pygame.org/">PyGame</a>.
+                                            <br><br>
+                                            <span>You can check the project on <a
+                                            href="https://github.com/munoztd0/AI_games/tree/master/Game_Life">Github</a>.</span>
+                                            <hr>
 
 
-
-
-
-
-
-
-
-
-
-
-
+                                            <div style="margin-top: 5px;">
+                                                <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/munoztd0/AI_games/">Github main repo</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1241,49 +1280,47 @@
             </div>
         </div>
     </center>
+
+
 
 
 
     <!-- We Data -->
     <center>
-        <div class="portfolio-modal modal fade" id="MarioRL" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="WeData" tabindex="-1" role="dialog" aria-hidden="true">
             <div class='modal__overlay'></div>
             <div class='modal__content'>
                 <div class="modal-dialog h-100">
                     <div class="modal-content">
                         <span class="btn_close btn-lg">
-          <i class="fa fa-times fa-2x" aria-hidden="true" data-dismiss="modal"></i>
-       </span>
+              <i class="fa fa-times fa-2x" aria-hidden="true" data-dismiss="modal"></i>
+           </span>
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-10 mx-auto">
                                     <div class="modal-body">
-                                        <img src="img/portfolio/mario.gif" width="180">
-                                        <h4>AI Building</h4>
+                                        <img src="img/portfolio/wedata.gif" width="180">
+                                        <h4>We Data</h4>
                                         <p style="max-width: 600px"></p>
-                                        <br><br>
+                                        <br>
                                         <div style="text-align: left">
                                             <h6>Description</h6>
                                             <hr>
                                             <p>
-                                                <a href="https://github.com/CCS-Lab/hBayesDM/"></a> from openAI gym tools reinforcement learning algorithms in PyTorch. training a PPO with actor/critic networks being CNNs SuperMarioBros training with convolutional neural network (CNN) Proximal Policy
-                                                Optimization (PPO),
 
-
-
-                                                <img src="img/portfolio/simmu.png" style="width:100%;"> It uses <a href="https://mc-stan.org//"> STAN</a> for Bayesian inference and supports both
-                                                <a href="https://cran.r-project.org/web/packages/hBayesDM/index.html">R</a> and <a href="https://pypi.org/project/hbayesdm/">Python</a>.
-                                                <a href="https://github.com/CCS-Lab/hBayesDM/"> hBayesDM</a>'s goal is to help interpreting experimental data through computational models using a full Bayesian statistical inference approach with MCMC sampling.
-
-                                                <!-- <img src="img/portfolio/brain.png" style="width:100%;"> -->
-                                                <p>My work involved the implementation of the Q-learning algorithm for reinforcement learning tasks.</p>
-                                                <center><img src="img/portfolio/RL.gif" style="width:70%;"></center>
-                                                <h6>Read more</h6>
-                                                <hr>
-                                                <span>You can check my project contributions on <a
-                      href="https://github.com/munoztd0/MarioRL">Github</a>.</span>
+                                                <br> I have been involved in We Data since 2020. We Data is a Swiss organization that shares knowledge on code in social sciences, gives statistical courses, and do coding demonstrations.
+                                                <br><br> Our goal is to promote code in the social science and raise awareness of new digital technologies.
+                                                <br><br>
+                                                <center><img src="img/portfolio/wedata.jpg" style="width:40%;"></center>
+                                                <br><br>
+                                                <span>You can check the project on our <a href="https://wedata.ch">Blog</a>, <a href="https://github.com/we-data-ch">Github</a>, 
+                                                        or on our <a href="https://www.youtube.com/channel/UCGktdbvbc_H-JEkYYTvwRVw">YouTube channel</a>.
+                                                    </span>
+                                                <br><br>
                                                 <div style="margin-top: 5px;">
-                                                    <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/munoztd0/MarioRL">Github</a>
+                                                    <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/we-data-ch">Github</a>
+                                                    <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://www.youtube.com/channel/UCGktdbvbc_H-JEkYYTvwRVw">YouTube</a>
+                                                    <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/munoztd0/teaching">Workshops</a>
                                                 </div>
                                         </div>
                                     </div>
@@ -1295,6 +1332,61 @@
             </div>
         </div>
     </center>
+
+
+
+
+
+    <!-- We Data -->
+    <center>
+        <div class="portfolio-modal modal fade" id="IQM" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class='modal__overlay'></div>
+            <div class='modal__content'>
+                <div class="modal-dialog h-100">
+                    <div class="modal-content">
+                        <span class="btn_close btn-lg">
+              <i class="fa fa-times fa-2x" aria-hidden="true" data-dismiss="modal"></i>
+           </span>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto">
+                                    <div class="modal-body">
+                                        <img src="img/portfolio/IQM.gif" width="180">
+                                        <h4>Image Quality Metrics</h4>
+                                        <p style="max-width: 600px"></p>
+                                        <br>
+                                        <div style="text-align: left">
+                                            <h6>Description</h6>
+                                            <hr>
+                                            <p>
+
+                                                The goal for this project is to provide context for the image quality metrics (IQMs) shown in the MRI quality metric group reports, by showing the distribution of IQMs for your data plotted relative to a larger set of anonymized IQMs pulled from the
+                                                <a href="https://www.biorxiv.org/content/10.1101/216671v1">crowdsourcing web API</a>.
+                                                <br><br>
+                                                <center><img src="img/portfolio/demo_Iqm.gif" style="width:50%;"></center>
+                                                <br><br> The code provided creates an online interactive data visualization app using <a href="https://dash.plotly.com/introduction">Dash</a> and <a href="https://plotly.com">Plotly</a>
+                                                <br><br>
+                                                <center><iframe src="img/portfolio/group_bold.html" width="100%" height="300">
+                                                </iframe></center>
+
+                                                <br><br>
+                                                <span>You can check the project on <a href="https://github.com/munoztd0/IQMGraphs">Github</a>.
+                                                    </span>
+                                                <br><br>
+                                                <div style="margin-top: 5px;">
+                                                    <a class="btn btn-secondary btn text-uppercase js-scroll-trigger" href="https://github.com/munoztd0/IQMGraphs">Github</a>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+
 
 
 
@@ -1330,16 +1422,6 @@
     <!-- Load d3.js -->
     <script src="https://d3js.org/d3.v4.min.js"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79254642-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-79254642-3');
-  </script> -->
-
 
 
 
@@ -1348,15 +1430,3 @@
 </body>
 
 </html>
-
-
-<!-- 
-Notre Banque
-
-La Poste Suisse Postfinance,
-Nordring 8
-3030 Berne
-
-BIC/SWIFT: POFICHBE
-IBAN: CH21 0900 0000 1773 8774 2
-Compte postal: 17-738774-2 -->
